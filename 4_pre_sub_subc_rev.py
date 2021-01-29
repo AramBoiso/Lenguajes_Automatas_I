@@ -27,4 +27,5 @@ for x in range(len(string)):
     aux = getSubStr( x, string)
 
     for c in string:
+        pass
         
