@@ -1,48 +1,8 @@
-
-
-# def menu(funcs):
-    
-#     limit = len(funcs)
-    
-#     for i in range(limit):
-#         print(str(i+1) + ") option " + str(i+1))
-    
-#     print(str(limit + 1) + ") exit")
-
-#     option = int (input("Enter one option [1-"+str(limit)+"]: "), 10)
-        
-#     if option != limit + 1:
-#         try:
-#             print( "This is option " + str(funcs[option -1]()) )
-#         except:
-#             print("Plase, enter a valid option.")
-        
-#         return menu(funcs)
-
-#     print("See you later")
-#     return
-
-# def t1():
-#     return 1
-
-# def t2():
-#     return 2
-        
-# fun_arrays = [ t1, t2]
-
-# # menu( fun_arrays )
-
-# dictionaries = {
-#     "name_option": "Option 1",
-#     "function": t1
-# }
-
-# print(dictionaries["function"]())
-
 string = input("Enter any string : ")
 string = "∈" + string + "∈"
 string_length = len(string)
 
+print("\nAll suffixe's of the "+ string[1:string_length-1]+":")
 for position in range(string_length):
 
     sub = string[0:position + 1]
@@ -69,7 +29,7 @@ for position in range(string_length):
         print("{ " + res + " }")
 
 
-print("-------------")
+print("\nAll prefix's of the "+ string[1:string_length-1] +":")
 for position in range(string_length):
 
     sub = string[string_length -1 -position:string_length]
@@ -97,7 +57,7 @@ for position in range(string_length):
     if position < string_length -1:
         print("{ " + res + " }")
 
-print("----")
+print("\nAll substring's of the "+ string[1:string_length-1]+":")
 
 for position in range(string_length):
 
@@ -125,7 +85,7 @@ for position in range(string_length):
         print("{ " + res + " }")
 
 
-print("---------")
+print("\nReverse "+string+":")
 
 string_aux = string
 count = string_length
