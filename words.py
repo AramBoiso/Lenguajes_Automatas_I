@@ -1,3 +1,4 @@
+# [a-z]+([,][a-z]+)+|[a-z]+
 print("Por favor ingrese los miembos del alafabeto por comas y sin espacios entre ellos, ejemplo: 'a,b,c,...'")
 alphabet = str(input("Ingrese los mimbros del alfabeto: ")).split(',', -1)
     
