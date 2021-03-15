@@ -97,5 +97,44 @@ for position in range(string_length):
 
     print("W^I = " + string_aux[position:string_length] + " -> " + res)
 
-print("W^I = " + res)   
+print("W^I = " + res)
+
 # print(string[::-1])
+# def menu(funcs):
+    
+#     limit = len(funcs)
+    
+#     for i in range(limit):
+#         print(str(i+1) + ") option " + str(i+1))
+    
+#     print(str(limit + 1) + ") exit")
+
+#     option = int (input("Enter one option [1-"+str(limit)+"]: "), 10)
+        
+#     if option != limit + 1:
+#         try:
+#             print( "This is option " + str(funcs[option -1]()) )
+#         except:
+#             print("Plase, enter a valid option.")
+        
+#         return menu(funcs)
+
+#     print("See you later")
+#     return
+
+# def t1():
+#     return 1
+
+# def t2():
+#     return 2
+        
+# fun_arrays = [ t1, t2]
+
+# # menu( fun_arrays )
+
+# dictionaries = {
+#     "name_option": "Option 1",
+#     "function": t1
+# }
+
+# print(dictionaries["function"]())

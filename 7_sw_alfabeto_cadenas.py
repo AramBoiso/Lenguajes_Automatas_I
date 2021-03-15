@@ -8,7 +8,6 @@ def getString(alphabet):
     result = 0
 
     for item in string:
-        print(increment, "* ",(alphabet.index(item) + 1) )
         result += increment * (alphabet.index(item) + 1)
         increment *= n
     return result
