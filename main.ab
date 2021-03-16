@@ -1,10 +1,22 @@
 #Este es un comentario
 #Este es otro comenatario
 
+#El programa leera el nombre del usuario digitado por consola
+#y al final imprimira una cadena diciendo "Hola + nombre"
 
-
-public class Main{
+public class Main  {
     public static void main(String[] args){
-        System.out.println("Hola Mundo");
+
+        Scanner read = new Scanner(System.in);
+
+        System.out.print("Ingrese su nombre: ");
+        String nombre = read.nextLine();
+
+        holaMundo(nombre);
     }
 }
+
+public static void holaMundo(String nombre){
+    System.out.println("Hola: " + nombre);
+}
+

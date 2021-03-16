@@ -1,9 +1,21 @@
 import re
-file = open('exp.txt', 'r')
-Lines = file.readlines()
+original_file = open('main.ab', 'r')
+lines = original_file.readlines()
 
+for line in lines:
 
-for line in Lines:
     result = re.search("^(\s*[a-zA-z0-9(){}\[\]\-;:+=_\"\'.]+\s*)+$", line)
+
     if result:
-        print(line)
+
+        ls = line.split()
+        debug_file = open("main.abd", "a")
+
+        for l in ls:
+            if ls.index(l) == len(ls) -1:
+                if lines.index(line) == len(lines) -1:
+                    debug_file.write(l)
+                else:
+                  debug_file.write(l+"\n")
+            else:
+               debug_file.write(l+" ")
